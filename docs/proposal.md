@@ -36,5 +36,6 @@ This data will likely be sectioned into separate tables based on each above sent
 
 Initial Designs
 ---------------
-![Web Page Layout](C:/Users/17152/Documents/CVTC/SQC/sqc-project-Nootrishus/docs/pageLayout.jpg "Web Page Layout")
-![Web Pages Relationships](C:/Users/17152/Documents/CVTC/SQC/sqc-project-Nootrishus/docs/pageRelationship.jpg "Web Pages Relationships")
+![Layout](CVTC/SQC/sqc-project-Nootrishus/docs/pageLayout.jpg "Web Page Layout")
+
+![Relationships](CVTC/SQC/sqc-project-Nootrishus/docs/pageRelationship.jpg "Web Pages Relationships")
