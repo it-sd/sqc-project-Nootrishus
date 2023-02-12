@@ -1,5 +1,5 @@
-# Your project name
-Your name or CVTC username
+# Glaffy
+Michelle DelCastillo
 
-Your project description
+This project will allow users to search for a keyword and get results from gif and free-photo websites. Users will also be able to save those search results. 
 
