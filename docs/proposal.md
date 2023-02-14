@@ -1,4 +1,4 @@
-Get Glad
+Glaffy
 ========
 
 My proposal is for a website that would use Giphy and possibly Pexels or DynaPictures to build a website that would curate reaction photos based on users searches and save those search results for future use. 
