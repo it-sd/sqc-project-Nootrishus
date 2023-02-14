@@ -1,4 +1,4 @@
-Get Glad
+Glaffy
 ========
 
 My proposal is for a website that would use Giphy and possibly Pexels or DynaPictures to build a website that would curate reaction photos based on users searches and save those search results for future use. 
@@ -17,13 +17,13 @@ Some elements I would consider would include:
 Web services
 -----------
 
-[Giphy](https://developers.giphy.com/docs/sdk)apiKey
+[Giphy](https://developers.giphy.com/docs/sdk) apiKey
 *I will need assistance figuring out what method I will need, I don't know yet.
 
-[DynaPictures](https://dynapictures.com/)apiKey
+[DynaPictures](https://dynapictures.com/) apiKey
 *I will need assistance figuring out what method I will need, I don't know yet.
 
-[Pexels](https://www.pexels.com/api/)apiKey
+[Pexels](https://www.pexels.com/api/) apiKey
 *I will need assistance figuring out what method I will need, I don't know yet.
 
 Database use
