@@ -1,0 +1,65 @@
+/* Body styles */
+body {
+    background-color: #f5e3e6;
+    color: #303030;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  /* Link styles */
+  a {
+    color: #5e5b5c;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #94908f;
+  }
+  
+  /* Paragraph styles */
+  p {
+    margin: 1em 0;
+  }
+  
+  /* Image styles */
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* About page styles */
+  .about {
+    background-color: #d8f3dc;
+    padding: 1em;
+    margin: 2em 0;
+  }
+  
+  /* Colors */
+  /* Pastel pink */
+  .primary-color {
+    color: #ee8572;
+  }
+  
+  /* Pastel blue */
+  .secondary-color {
+    color: #b2d6f2;
+  }
+  
+  /* Pastel green */
+  .accent-color {
+    color: #95d5b2;
+  }
+  
