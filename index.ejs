@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Choose a password</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+<body>
+  <main> 
+    <h1>Choose your password</h1>
+    <input id="password0" maxlength="32" placeholder="Password" type="password">
+    <ul id="constraints">
+      <li id='six' class='not-met'>contains at least six characters</li>
+      <li id='upper' class='not-met'>includes an uppercase letter</li>
+      <li id='lower' class='not-met'>includes a lowercase letter</li>
+      <li id='number' class='not-met'>includes a non-alphabetic character</li>
+    </ul>
+    <input id="password1" maxlength="32" placeholder="Confirm password" type="password">
+    <ul id="constraints1">
+      <li id='match' class='met'>matches</li>
+    </ul>
+    <button id='register' disabled>Password not yet valid</button>
+  </main>
+  <script>
+const metStyles = {
+  false: 'not-met',
+  true: 'met'
+}
+
+const main = document.querySelector('main')
+const password0 = document.getElementById('password0')
+const password1 = document.getElementById('password1')
+const register = document.getElementById('register')
+
+const constraints = [
+  {
+    element: document.getElementById('six'),
+    func: w => w.length >= 6
+  },
+  {
+    element: document.getElementById('upper'),
+    func: w => (/\p{Uppercase}/u).test(w)
+  },
+  {
+    element: document.getElementById('lower'),
+    func: w => (/\p{Lowercase}/u).test(w)
+  },
+  {
+    element: document.getElementById('number'),
+    func: w => (/\P{Letter}/u).test(w)
+  }
+]
+
+const validatePassword = function (aPassword) {
+  let isValid = true
+
+  for (const test of constraints) {
+    const met = test.func(aPassword)
+    test.element.className = metStyles[met]
+    isValid = isValid && met
+  }
+
+  return isValid
+}
+
+const checkPasswordsMatch = function (p0, p1) {
+  const match = document.getElementById('match')
+  const matches = p0 === p1
+
+  match.className = metStyles[matches]
+
+  return matches
+}
+
+const updateButton = function () {
+  const validPwd = validatePassword(password0.value)
+  const isValid = checkPasswordsMatch(password0.value, password1.value) &&
+    validPwd
+
+  register.disabled = !isValid
+  register.innerHTML = isValid ? 'Use this password' : 'Password not yet valid'
+
+  return isValid
+}
+
+password0.addEventListener('input', (e) => updateButton())
+password1.addEventListener('input', (e) => updateButton())
+
+// Submit passwords to the server only if they're valid.
+const submit = async function () {
+main.innerHTML = '<h1>Please wait</h1>'
+
+const url = '/password'
+const password = password0.value
+const body = JSON.stringify({ password })
+
+const res = await fetch(url, {
+  method: 'POST',
+  body,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+
+const data = await res.json()
+
+if(data.success) {
+  main.innerHTML = '<h1>Success!</h1>'
+} else {
+  main.innerHTML = '<h1>Server error</h1>'
+}
+}
+register.addEventListener('click', (e) => submit())
+  </script>
+</body>
+</html>
+
+
