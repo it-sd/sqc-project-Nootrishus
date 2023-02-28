@@ -5,4 +5,6 @@ This project will allow users to search for a keyword and get results from gif a
 
 [Glaffy on Render](https://glaffy.onrender.com)
 
+4. Hello from bpecher!
+=======
 ![ER Diagram](/docs/diagram.jpg "Diagram")
