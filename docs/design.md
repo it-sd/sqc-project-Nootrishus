@@ -10,6 +10,26 @@ To increase consistency and standards, one concrete step could be to conduct a h
 To increase flexibility and efficiency of use, one concrete step could be to conduct user testing and observe how users interact with the website in real-world scenarios. Based on the findings of the user testing, the website's interface could be refined to make it more intuitive and efficient to use. For example, if users are having difficulty locating certain features or completing specific tasks, the interface could be modified to make these features more prominent or the tasks more streamlined. Additionally, providing keyboard shortcuts or customizable interfaces could improve the efficiency of use for more experienced users.
 
 
-![Example of Consistency](docs/cands.webp "Consistency")
+![Example of Consistency](cands.webp "Consistency")
 
-![Example of Flexibility](docs/fande.webp "Flexibility")
+![Example of Flexibility](fande.webp "Flexibility")
+
+
+The Look and Vibe
+=========================================================
+
+I am looking into two color schemes:
+
+![Base Theme](AdobeColor-My Color Theme.jpeg "Base")
+![Colorblind Theme](AdobeColor-My Color Blind Safe Theme.jpeg "Colorblind") 
+
+Fonts:
+------
+
+*Montserrat
+*Roboto
+*Pacifico
+
+My color choices are lighthearted and dont take themselves seriously. There is an theme that can be selected for Colorblindness if needed that will adjust the colors for accessability. The colors imply fun and that lighthearted nature is reflected in the alternate design as well.
+
+Fonts will be: Pacifico for the logo area, Montserrat for all headers, and Roboto for the paragraphs. I really feel that the designes all work well with each other to provide a visual balance. This particular grouping of fonts leans into the overall sense of fun and compliments both color themes.
