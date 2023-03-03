@@ -10,6 +10,6 @@ To increase consistency and standards, one concrete step could be to conduct a h
 To increase flexibility and efficiency of use, one concrete step could be to conduct user testing and observe how users interact with the website in real-world scenarios. Based on the findings of the user testing, the website's interface could be refined to make it more intuitive and efficient to use. For example, if users are having difficulty locating certain features or completing specific tasks, the interface could be modified to make these features more prominent or the tasks more streamlined. Additionally, providing keyboard shortcuts or customizable interfaces could improve the efficiency of use for more experienced users.
 
 
-![Example of Consistency](C:/Users/17152/Documents/CVTC/SQC/sqc-project-Nootrishus/docs/cands.webp "Consistency")
+![Example of Consistency](docs/cands.webp "Consistency")
 
-![Example of Felxibility](C:/Users/17152/Documents/CVTC/SQC/sqc-project-Nootrishus/docs/fande.webp "Flexibility")
+![Example of Flexibility](docs/fande.webp "Flexibility")
