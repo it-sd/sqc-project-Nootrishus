@@ -27,9 +27,9 @@ I am looking into two color schemes:
 Fonts:
 ------
 
-*Montserrat
-*Roboto
-*Pacifico
+-Montserrat
+-Roboto
+-Pacifico
 
 My color choices are lighthearted and dont take themselves seriously. There is an theme that can be selected for Colorblindness if needed that will adjust the colors for accessability. The colors imply fun and that lighthearted nature is reflected in the alternate design as well.
 
