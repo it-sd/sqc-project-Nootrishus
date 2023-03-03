@@ -20,8 +20,9 @@ The Look and Vibe
 
 I am looking into two color schemes:
 
-![Base Theme](AdobeColor-My Color Theme.jpeg "Base")
-![Colorblind Theme](AdobeColor-My Color Blind Safe Theme.jpeg "Colorblind") 
+![Base Theme](ColorTheme.jpeg "Base")
+
+![Colorblind Theme](ColorBlindSafeTheme.jpeg "Colorblind") 
 
 Fonts:
 ------
