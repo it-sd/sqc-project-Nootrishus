@@ -1,7 +1,9 @@
 require('dotenv').config() // Read environment variables from .env
 const express = require('express')
+const fetch = require('node-fetch')
 const path = require('path')
 const PORT = process.env.PORT || 5163
+const API_KEY = process.env.PEXELS_API_KEY || 'l1u2fLDFwSnSUMGSdN8KMqEA7MFendqROd8xOqDYOTEbNZ6lnwEfBzKL'
 
 const validatePassword = function (aPassword) {
   const constraints = [
@@ -42,6 +44,19 @@ express()
       res.json({ success: true })
     } else {
       res.json({ success: false })
+    }
+  })
+  .get('/pexels', async function (req, res) {
+    const query = 'ocean'
+    const url = `https://api.pexels.com/v1/search?query=${query}`
+    const headers = { Authorization: API_KEY}
+    const response = await fetch(url, { headers })
+
+    if (response.ok) {
+      const data = await response.json()
+      res.render('pages/pexels', { data })
+    } else { 
+      res.render('pages/error', { message: 'Failed to fetch data from Pexels API'})
     }
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
